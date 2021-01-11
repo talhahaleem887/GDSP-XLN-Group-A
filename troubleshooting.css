@@ -1,0 +1,37 @@
+img{
+
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -2%;
+    padding: 0;
+    
+    }
+    
+    h1{
+    color: #29b4be;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 40px;
+    
+    }
+    
+    .container{
+    
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10%;
+    }
+    
+    #one{
+    
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    
+    }
+    
+    #two {
+
+        text-align: left;
+        font-size: 20px;
+    }
