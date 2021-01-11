@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title>XLN Troubleshooting Login Page</title>
+</head>
+<body>
+    <link rel="stylesheet" href="mystyle.css">
+
+    <div class="Title">
+        <h1>XLN Troubleshooting</h1>
+    </div>
+    
+    <div class="logo">
+        <img src="https://pbs.twimg.com/profile_images/956478018502963201/uifwBhre_400x400.jpg" alt = "XLN Logo">
+            <a href = "https://www.xln.co.uk/">    
+                <div class="overlay">
+                    <div class="overlay_text">Back to Homepage</div>
+                </div>
+            </a>
+    </div>
+
+    
+
+    <div class ="container">
+        <form name="loginForm" method="post" action="login.php">
+            <table width="20%" align="center">
+            <tr>    
+            <td>Username:</td>
+            <td><input type="text" size=25 name="userid"></td>
+            </tr>
+            
+            <tr>
+            <td>Password:</td>
+            <td><input type="Password" size=25 name="pwd"></td>
+            </tr>
+            
+            <tr>
+            <td ><input type="Reset"></td>
+            <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+            </tr>
+
+            <tr>
+               <td><input type="checkbox" checked="checked" name="remember"> Remember me</td>
+            </tr>
+            
+            </table>
+            </form>
+
+            <script language="javascript">
+                function check(form)
+                {
+                
+                if(form.userid.value == "admin" && form.pwd.value == "admin")
+                {
+                    alert("Correct")
+                    return true;
+                }
+                else
+                {
+                    alert("Error Password or Username")
+                    return false;
+                }
+                }
+                </script>
+           
+    </div>
+   
+    
+
+    <div class="list">
+        <h3>Please select the service that is malfunctioning</h3>
+    <form action="/XLN_Troubled_Service.php">
+        <input type="checkbox" id="service1" name="service1" value="WIFI">
+            <label for="service1"> WIFI </label><br>
+        <input type="checkbox" id="service2" name="service2" value="Phone Line">
+            <label for="service2"> Phone Line </label><br>
+        <input type="checkbox" id="service3" name="service3" value="Other">
+            <label for="service3"> Other </label><br><br>
+        <input type="submit" onclick="return check(this.form)" value="Submit">
+  </form>
+
+
+  <script language="javascript">
+    function check(form)
+    {
+    
+    if(form.userid.value == "admin" && form.pwd.value == "admin")
+    {
+        alert("Correct")
+        return true;
+    }
+    else
+    {
+        alert("Error Password or Username")
+        return false;
+    }
+    }
+    </script>
+
+  
+</div>
+</body>
+</HTML>
