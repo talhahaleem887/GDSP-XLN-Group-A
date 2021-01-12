@@ -1,0 +1,74 @@
+    div.stickybar{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        font-size: 25px;
+        color: #29b4be;
+    
+    }
+
+    h1{
+    color: #29b4be;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 40px;
+    
+    }
+    
+    .container{
+    
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10%;
+    }
+    
+    #one{
+    
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    
+    }
+    
+    #two {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        text-align: center;
+      }
+      
+      li {
+        display: inline;
+       
+      }
+      
+      li a {
+        display:inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      }
+
+      .column1 {
+
+        text-align: left;
+        font-size: 20px;
+        margin: 0 auto;
+        width: 30%;
+      }
+      
+
