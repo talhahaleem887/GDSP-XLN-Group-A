@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="myScript.js"></script>
+</head>
+<body>
+
+<a class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/XLN-Logo.jpg" alt="image not loaded"></a>
+<br><br>
+<div id="part1" style="display: block;">
+    <div class="form">
+        <form>
+            <label>Are you only able to make calls?</label>
+            <br>
+            <button onclick="return showHide('part1', 'part2')">Yes</button>
+            <button onclick="return showHide('part1', 'part2')">No</button>
+            <br>
+        </form>
+    </div>
+</div>
+
+<div id="part2" style="display: none;">
+    <div class="form">
+        <form>
+            <h4>Try dialling 17070</h4>
+            <label for="numWorked">Is 17070 number the correct number?</label>
+            <br>
+            <button onclick="document.location='testSocket.html'">Yes</button>
+            <button onclick="return showHide('part2', 'part3')">No</button>
+            <br>
+        </form>
+    </div>    
+</div>
+
+<div id="part3" style="display:none;">
+    <div class="form">
+        <form>
+            <label for="intermittent">Intermittent?</label>
+            <br>
+            <button type="button" onclick="document.location='testSocket.html'">Yes</button>
+            <button type="button" onclick="location.href='photos.html'">No</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

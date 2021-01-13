@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="myScript.js"></script>
+</head>
+<body>
+
+<a class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/XLN-Logo.jpg" alt="image not loaded"></a>
+<br><br>
+
+<div id="page1" style="display: block;">
+    <div class="form">
+        <form>
+            <h4>Please fill out this questionnaire</h4><br>
+            <label>What kind(s) of fault are you experiencing?</label>
+            <br><br>
+            <input type="Checkbox" name="noisy">
+            <label for="noisy">Noisy</label>
+            <br>
+            <input type="Checkbox" name="noDT">
+            <label for="noDT">No Dial Tone</label>
+            <br>
+            <input type="Checkbox" name="damRep">
+            <label for="damRep">Damage Report</label>
+            <br>
+            <input type="Checkbox" name="bell">
+            <label for="bell">Bell Not Ringing</label>
+            <br>
+            <input type="Checkbox" name="contDT">
+            <label for="contDT">Continuous Dial Tone</label>
+            <br>
+            <label for="other">Other (please give a description below)</label>
+            <br>
+            <input type="text" name="other">
+            <br><br>
+            <button onclick="return showHide('page1', 'page2')">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div id="page2" style="display: none;">    
+    <div class="form">    
+        <form>    
+            <label>Are you having problems with making or recieving calls?</label>
+            <br><br>
+            <button type="button" onclick="location.href='outgoingOnly.html'">Yes</button>
+            <button type="button" onclick="location.href='testSocket.html'">No</button>
+            <br>
+        </form>
+    </div>
+</div>
+
+
+
+</body>
+</html>

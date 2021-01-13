@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="myScript.js"></script>
+</head>
+<body>
+
+<a class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/XLN-Logo.jpg" alt="image not loaded"></a>
+<br><br>
+
+<div id="testSocket" style="display: block;">
+    <div class="form">
+        <form>
+            <h4>Try replacing the TestSocket</h4>
+            <label>Does this fix the problem?</label><br>
+            <button type="linkText" onclick="document.location='success.html'">Yes</button>
+            <button type="linkText" onclick="return showHide('testSocket', 'microFilter');">No</button>
+        </form>
+    </div>
+</div>
+
+<div id="microFilter" style="display: none;">
+    <div class="form">
+        <form>
+            <h4>Try replacing the Micro Filter</h4>
+            <label>Does this fix the problem?</label><br>
+            <button type="linkText" name="mFiltY" onclick="document.location='success.html'">Yes</button>
+            <button type="linkText" name="mFiltN" onclick="return showHide('microFilter', 'altHandset')">No</button>
+        </form>
+    </div>
+</div>
+
+<div id="altHandset" style="display: none;">
+    <div class="form">
+        <form>
+            <h4>Try an alternative handset</h4>
+            <label>Is divert call required?</label><br>
+            <button type="linkText" name="divertCY" onclick="return showHide('altHandset', 'divertNum')">Yes</button>
+            
+            <button type="button" name="divertCN" onclick="document.location='photos.html'">No</button>
+            
+            
+        </form>
+    </div>    
+</div>
+
+<div id="divertNum" style="display: none;">
+    <div class="form">
+        <form>
+            <label>What number?</label>
+            <br>
+            <input type="text" placeholder="divert number">
+            <br>
+            <button type="button" onclick="document.location='photos.html'">Submit</button>
+        </form>
+    </div>    
+</div>
+
+
+</body>
+</html>
