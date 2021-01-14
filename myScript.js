@@ -10,19 +10,21 @@ function show(hidden){
     return false;
 }
 
-// function check(form)
-// {
+window.onscroll = function() {myFunction()};
 
-// if(form.document == "landLineStart" && form.getElementById == "ogY")
-// {
+// Get the navbar
+var stickybar = document.getElementById("stickybar");
 
-//     var myWindow = location.replace("outgoingOnly.html");
 
-//     return true;
-// }
-// else if(form.document == "landLineStart" && form.getElementById == "ogN")
-// {
-//     var myWindow = location.replace("testSocket.html");
-//     return true;
-// }
-// }
+// Get the offset position of the navbar
+var sticky = stickybar.offsetTop;
+
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    stickybar.classList.add("sticky")
+  } else {
+    stickybar.classList.remove("sticky");
+  }
+}
