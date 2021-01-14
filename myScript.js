@@ -1,4 +1,3 @@
-
 function showHide(shown, hidden){
     document.getElementById(hidden).style.display='block';
     document.getElementById(shown).style.display='none';

@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,15 +18,27 @@
 <br>
 <br>
 <br>
+<?php 
+
+session_start();
+
+        include "connection.php";
+	    include "functions.php";
+        include "login.php";
+        include "index.php";
+
+        echo "Hello";
+?>
+
 <div class="form">
     <form action ="IssueSelection.html">
         <label for="Customer Number"><b>Customer Number</b></label>
         <br>
-        <input type="custNo" placeholder="Customer Number" name="email" required>
+        <input type="custNo" placeholder="Customer Number" name="Customer_Key" required>
         <br>
         <br>
         <a type="forgot">Forgotten Customer Number?</a>
-        <a type="unregistered">Not Registered</a>
+        <a type="unregistered" href="signup.php">Not Registered</a>
         <br>
         <br>
         <input type="Checkbox" name="chckbx">
