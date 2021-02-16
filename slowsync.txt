@@ -1,0 +1,259 @@
+<!DOCTYPE html> 
+<html lang"=en">
+    <head>
+        <link rel="stylesheet" href="troubleshooting.css">
+        <script src="myScript.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> XLN Troubleshooting Steps-BroadBand (NoSync)</title>
+    </head>
+    <body>
+        <div id ="stickybar">
+            
+            <a class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/XLN-Logo.jpg" alt="image not loaded" height="100" width=auto></a>
+            <p class = "sales"> Sales: <br> 0808 302 9676 </p>
+            <p class = "customer"> Customer Service: <br> 0344 880 7777</p>
+        </div>
+
+        <ul class="topnav">
+            <li><a href="phone">Phone</a></li>
+            <li><a href="news.asp">Broadband</a></li>
+            <li><a href="contact.asp">Fibre</a></li>
+            <li><a href="cloudvoice.asp">Cloud Voice</a></li>
+            <li><a href="Mobile.asp">Mobile</a></li>
+            <li><a href="WiFi.asp">WiFi</a></li>
+            <li><a href="Payments.asp">Payments</a></li>
+            <li><a href="Energy.asp">Energy</a></li>
+        </ul>
+
+        <br><br>
+
+        <h1>Broadband: No Sync Troubleshooting</h1>
+
+        <div id="part1" style="display: block;">
+            
+            <div class="form">
+                <form>
+                    <p id="one">Step 1: Is your telephone line working? <br> <br> </p>
+               
+                    <input type="text" placeholder="Description of problem" id="problem" required>
+                    <br>
+                    <br>
+                    <label>Are you only able to make calls? (Please select no if its only outgoing calls)</label><br>
+                    <br>
+                    <button onclick="return showHide('part1', 'part2')">Yes</button>
+                    <button onclick="return showHide('part1', 'part3')">No</button>
+                    <br>
+                </form>
+            </div>
+        </div>
+        
+        <div id="part2" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id="two"> Describe setup from NTE here.** </p></h4>
+                    <a class ="socket"><img src="https://www.electricalworld.com/Images/Models/Full/2181.Png" alt="socket" height=300 width =300></a>
+                    
+                    <br><br>
+                    <button onclick="return showHide('part2', 'part4')">Yes</button>
+                    <button onclick="return showHide('part2', 'part5')">No</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+        
+        <div id="part3" style="display:none;">
+            <div class="form">
+                <form>
+                    
+                    <label for="numWorked">Try dialling 17070. If unsuccessful; Is 17070 number the correct number?</label>
+                    <br>
+                    <br>
+                    <button onclick="return showHide('part3', 'part2')">Yes</button>
+                    <button onclick="return showHide('part3', 'SwitchLandLineCrossedLine')">No</button>
+                </form>
+            </div>
+        </div>
+        
+
+        <div id="part4" style="display: none;">
+            <div class="form">
+                <form>
+                    <h1>   <br>End of troubleshooting steps.    </h1>
+                    <p id ="one"> Do you require further assistance?</p>
+                    <br><br>
+                    <button onclick="return showHide('part4', 'part8')">Yes</button>
+                    <button onclick="return showHide('part4', 'part6')">No</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+        
+        <div id="part5" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Replace Test Socket<br> <br> Is it functional now?</p>
+                    <br><br>
+                    <button onclick="return showHide('part5', 'part4')">Yes</button>
+                    <button onclick="return showHide('part5', 'part8')">No</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part6" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one"> <br> <br> End of troubleshooting steps. </p>
+                    <br><br>
+
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part7" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Change your DSL cable<br> <br> Is it functional now?</p>
+                    <br><br>
+                    <button onclick="return showHide('part7', 'part4')">Yes</button>
+                    <button onclick="return showHide('part7', 'part10')">No</button>
+                    <button onclick="return showHide('part7', 'part9')">Can't replace DSL cable?</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part8" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Change Micro Filter<br> <br> Is the problem fixed?</p>
+                    <br><br>
+                    <button onclick="return showHide('part8', 'part4')">Yes</button>
+                    <button onclick="return showHide('part8', 'part7')">No</button>
+                    <button onclick="return showHide('part8', 'part9')">Can't replace Micro Filter?</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="SwitchLandLineCrossedLine" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Please try using the Landline troubleshoot<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('SwitchLandLineCrossedLine', 'part6')">Yes</button>
+                    <button onclick="return showHide('SwitchLandLineCrossedLine', 'part6')">No</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part9" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">use phone wire direct to router without micro filter.<br> <br> Is the problem fixed?</p>
+                    <br><br>
+                    <button onclick="return showHide('part9', 'part4')">Yes</button>
+                    <button onclick="return showHide('part9', 'part10')">No</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part10" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">if sync speed has improved, would you like us to divert your calls until you can obtain a new DSL/MF<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('part10', 'part12')">Yes</button>
+                    <button onclick="return showHide('part10', 'part8')">No</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part11" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Divert Call process<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('part11', 'part12')">Next</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part12" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Attach supporting photos<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('part12', 'part13')">Next</button>
+                    <button onclick="return showHide('part12', 'part13')">No</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part13" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Alternative Rourter tested?<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('part13', 'part14')">Next</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part14" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Display TRC's<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('part14', 'part15')">Next</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part15" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Access Times<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('part15', 'part16')">Next</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part16" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">Missed appointment accepted<br> <br></p>
+                    <br><br>
+                    <button onclick="return showHide('part16', 'part17')">Next</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <div id="part17" style="display: none;">
+            <div class="form">
+                <form>
+                    <p id ="one">SLA <br> <br>Display user care level</p>
+                    <br><br>
+                    <button onclick="return showHide('part17', 'part6')">Next</button>
+                    <br>
+                </form>
+            </div>    
+        </div>
+
+        <footer class="footer">
+            <p id ="footer"> Footer </p>
+        </footer>
+    </body>
+</html>
